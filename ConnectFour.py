@@ -1,6 +1,7 @@
 import pygame
 import sys
 from pygame.locals import QUIT
+import time
 
 #Board Image: https://studio.code.org/v3/assets/TLFZogscaPiUKUzLFfvzYQ/Connect4Board.png
 
@@ -123,9 +124,11 @@ while True:
     #checks for winner
     if check_winner() == RED:
         print("Red Won")
+        time.sleep(0.5)
         pygame.quit()
         sys.exit()
     elif check_winner() == YELLOW:
         print("Yellow Won")
+        time.sleep(0.5)
         pygame.quit()
         sys.exit()
